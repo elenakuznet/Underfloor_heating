@@ -11,11 +11,4 @@
 .header__button {
     background: transparent;
     border: 1px solid #232020;
-    padding: 18px 40px;
-    border-radius: 24px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-transform: uppercase;
-    color: #232020;
 }
