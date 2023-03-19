@@ -14,14 +14,17 @@
     <link rel="stylesheet" href="style/calc.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/banner.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header class="header">
         <h1 class="visually-hidden">Тёплый пол в каждый дом</h1>
         <div class="container header__container">
             <img class="header__logo" src="img/logo.svg" alt="Логотип с солнышком и текстом теплый пол">
-            <button class="header__button button">заказать</button>
+            <button class="header__button button">Заказать</button>
         </div>
     </header>
 
@@ -29,19 +32,50 @@
         <section class="hero section-offset">
             <div class="container hero__container">
                 <div class="hero__content grey-block">
-                    <h2 class="hero__title">Приносим тепло в&nbsp;каждый дом</h2>
+                    <h2 class="title hero__title">Приносим тепло в&nbsp;каждый дом</h2>
                     <p class="hero__description">Устанавливаем теплые полы в&nbsp;квартирах, офисах и&nbsp;загородных домах.</p>
                     <a href="#calc" class="button link hero__link">Рассчитать&nbspстоимость</a>
                 </div>
-                <div class="hero__slider-wrapper">
-                    <div class="filling">
-                        <div class="filling">
-                            <div 
-                            class="filling hero__image" 
-                            style="background-image: url('./img/hero_img-01.jpg');"></div>
+                <div class="hero__slider-block">
+                    <div class=" hero__slider swiper">
+                        <div class=" hero__slider-wrapper swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div 
+                                    class="hero__image" 
+                                    style="background-image: url('img/hero_img-01.jpg');">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div 
+                                    class="hero__image" 
+                                    style="background-image: url('img/hero_img-02.jpg');">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div 
+                                    class="hero__image" 
+                                    style="background-image: url('img/hero_img-03.jpg');">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div 
+                                    class="hero__image" 
+                                    style="background-image: url('img/hero_img-04.jpg');">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div 
+                                    class="hero__image" 
+                                    style="background-image: url('img/hero_img-05.jpg');">
+                                </div>
+                            </div>
                         </div>
-                        <button class="hero__slider-btn hero__slider-btn_prev"></button>
-                        <button class="hero__slider-btn hero__slider-btn_next"></button>
+
+                        <div class="hero__arrow">
+                            <button class="hero__slider-btn hero__slider-btn_prev"></button>
+                            <button class="hero__slider-btn hero__slider-btn_next"></button>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -49,13 +83,13 @@
 
         <section class="advantages section-offset">
             <div class="container advantages__container">
-                <h2 class="advantages__title">Наши преимущества</h2>
+                <h2 class="title advantages__title">Наши преимущества</h2>
                 <ul class="advantages__list list-reset">
-                    <li class="advantages__list">Надежные материалы</li>
-                    <li class="advantages__list">опытные монтажники</li>
-                    <li class="advantages__list">Регулируемая температура пола</li>
-                    <li class="advantages__list">Защита от замыканий</li>
-                    <li class="advantages__list">Гарантия до 10 лет</li>
+                    <li class="advantages__item">Надежные материалы</li>
+                    <li class="advantages__item">опытные монтажники</li>
+                    <li class="advantages__item">Регулируемая температура пола</li>
+                    <li class="advantages__item">Защита от замыканий</li>
+                    <li class="advantages__item">Гарантия до 10 лет</li>
                 </ul>
 
             </div>
@@ -64,7 +98,7 @@
         <section class="calc section-offset" id="calc">
             <div class="container calc__container">
                 <div class="calc__content grey-block">
-                    <h2 class="calc__title">Рассчитайте стоимость</h2>
+                    <h2 class="title calc__title">Рассчитайте стоимость</h2>
 
                     <form class="calc__form">
                         <fieldset class="calc__fieldset calc__fieldset_size">
@@ -91,7 +125,7 @@
                                 type="radio" 
                                 name="tariff" 
                                 value="economy">
-                                <span class="calc__input-radio">Эконом</span>
+                                <span class="calc__label-radio">Эконом</span>
                             </label>
                             <label class="calc__wrapper-input calc__wrapper-input-tariff">
                                 <input 
@@ -100,7 +134,7 @@
                                 name="tariff" 
                                 value="comfort"
                                 checked>
-                                <span class="calc__input-radio">комфорт</span>
+                                <span class="calc__label-radio">комфорт</span>
                             </label>
                             <label class="calc__wrapper-input calc__wrapper-input-tariff">
                                 <input 
@@ -108,7 +142,7 @@
                                 type="radio" 
                                 name="tariff" 
                                 value="premium">
-                                <span class="calc__input-radio">Премиум</span>
+                                <span class="calc__label-radio">Премиум</span>
                             </label>
 
                         </fieldset>
