@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="style/advantages.css">
     <link rel="stylesheet" href="style/calc.css">
     <link rel="stylesheet" href="style/footer.css">
-    <link rel="stylesheet" href="style/banner.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
@@ -23,7 +22,11 @@
     <header class="header">
         <h1 class="visually-hidden">Тёплый пол в каждый дом</h1>
         <div class="container header__container">
-            <img class="header__logo" src="img/logo.svg" alt="Логотип с солнышком и текстом теплый пол">
+            <img class="header__logo image"
+            src="img/logo.svg" 
+            alt="Логотип с солнышком и текстом теплый пол"
+            width="162"
+            height="39">
             <button class="header__button button">Заказать</button>
         </div>
     </header>
@@ -82,16 +85,17 @@
         </section>
 
         <section class="advantages section-offset">
-            <div class="container advantages__container">
-                <h2 class="title advantages__title">Наши преимущества</h2>
-                <ul class="advantages__list list-reset">
-                    <li class="advantages__item">Надежные материалы</li>
-                    <li class="advantages__item">опытные монтажники</li>
-                    <li class="advantages__item">Регулируемая температура пола</li>
-                    <li class="advantages__item">Защита от замыканий</li>
-                    <li class="advantages__item">Гарантия до 10 лет</li>
-                </ul>
-
+            <div class="container">
+                <div class="advantages__container">
+                    <h2 class="title advantages__title">Наши преимущества</h2>
+                    <ul class="advantages__list list-reset">
+                        <li class="advantages__item">Надежные материалы</li>
+                        <li class="advantages__item">опытные монтажники</li>
+                        <li class="advantages__item">Регулируемая температура пола</li>
+                        <li class="advantages__item">Защита от замыканий</li>
+                        <li class="advantages__item">Гарантия до 10 лет</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -144,7 +148,6 @@
                                 value="premium">
                                 <span class="calc__label-radio">Премиум</span>
                             </label>
-
                         </fieldset>
                         <button class="button calc__submit" type="submit">Рассчитать</button>
                     </form>
@@ -168,7 +171,12 @@
     </main>
     <footer class="footer section-offset">
         <div class="container footer__container">
-            <img class="footer__logo" src="img/logo.svg" alt="Логотип с солнышком и текстом теплый пол">
+            <img 
+            class="footer__logo image"
+            src="img/logo.svg" 
+            alt="Логотип с солнышком и текстом теплый пол"
+            width="162"
+            height="39">
             <ul class="footer__list footer__social list-reset">
                 <li class="footer__item">
                     <a href="#" class="link footer__link">
@@ -218,9 +226,6 @@
                 <li class="footer__item">Developer: <a href="#" class="link footer__link">Elena Kuznetsova</a> </li>
             </ul>
         </div>
-        
     </footer>
-    
-    
 </body>
 </html>

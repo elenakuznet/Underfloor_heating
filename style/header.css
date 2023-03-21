@@ -12,3 +12,9 @@
     background: transparent;
     border: 1px solid #232020;
 }
+
+@media (max-width: 920px) {
+    .header__logo {
+        width: 124px;
+    }
+}

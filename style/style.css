@@ -1,3 +1,10 @@
+:root {
+    --width-slide: 590px;
+    --gap: 10px;
+    --width-block: calc(50% - var(--gap) / 2);
+    --padding: 50px;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -60,7 +67,7 @@ body {
 .grey-block {
     background-color: #F8F8F8;
     border-radius: 12px;
-    padding: 50px;
+    padding: var(--padding);
     min-height: 530px;
 }
 
@@ -71,4 +78,73 @@ body {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+
+@media (max-width:1240px) {
+    :root {
+        --width-slide: 440px;
+        --padding: 30px;
+    }
+
+    .container {
+        max-width: 890px;
+    }
+
+    .section-offset {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .title {
+        font-size: 34px;
+    }
+
+    .grey-block {
+        min-height: 396px;
+    }
+}
+
+@media (max-width: 920px) {
+    :root {
+        --width-slide: 311px;
+        --padding: 24px;
+    }
+    .container {
+        max-width: 630px;
+        padding: 0 30px;
+    }
+
+    .grey-block {
+        min-height: 280px;
+    }
+
+    .button {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 560px) {
+    :root {
+        --padding: 20px;
+        --gap: 4px;
+    }
+    .container {
+        max-width: 630px;
+        padding: 0 6px;
+    }
+
+    .grey-block {
+        min-height: 232px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .button {
+        font-size: 12px;
+    }
 }
