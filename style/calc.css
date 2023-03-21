@@ -112,6 +112,7 @@
 }
 
 .calc__result-wrapper {
+    display: none;
     flex-basis: 303px;
     padding: 24px;
     border-radius: 8px;
