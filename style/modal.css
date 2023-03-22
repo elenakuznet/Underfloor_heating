@@ -87,3 +87,10 @@
     right: 10px;
     line-height: 0;
 }
+
+.modal__input-error {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+}
